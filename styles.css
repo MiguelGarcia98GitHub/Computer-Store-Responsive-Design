@@ -7,10 +7,6 @@ body {
 
 /* NAVBAR */
 
-.navbar {
-  background-color: gray;
-}
-
 .ul-navbar {
   width: 100%;
   display: grid;
@@ -253,5 +249,49 @@ li:hover {
 
   .card-image {
     width: 200px;
+  }
+}
+
+/* NAVBAR MOVIL */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #2d31fa;
+}
+
+.burgerdivcontainer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.burgerdiv {
+  width: 45px;
+  height: 6px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+.displaynoneclass {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .burgerdivcontainer {
+    display: flex;
+  }
+
+  .landing {
+    margin-top: 100px;
   }
 }
